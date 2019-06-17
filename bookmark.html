@@ -1,0 +1,42 @@
+<style>
+	.card {
+		background: #fff;
+		border-radius: 2px;
+		display: flex;
+		flex-direction: column;
+		height: 300px;
+		margin: 1rem;
+		position: relative;
+		width: 300px;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+		transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+	}
+
+	.card svg {
+		filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, .5));
+		position: absolute;
+		right: 0;
+	}
+
+	.card .bookmark {
+
+		fill: orange;
+	}
+
+	.card .star {
+
+		fill: white;
+	}
+</style>
+
+<div class="card">
+	<svg x="0px" y="0px" width="25px" height="25px" viewBox="0 0 20 20">
+		<polygon class="bookmark" fill="#FFA500"
+			points="5.07,0.167 5.07,19.833 10.255,14.814 15.441,19.833 15.441,0.167 " />
+		<polygon class="star" fill="#FFFFFF"
+		 points="10.462,3.462 11.898,6.108 15.109,6.532 12.787,8.591 13.334,11.5 10.462,10.126 7.59,11.5 
+		8.138,8.591 5.814,6.532 9.026,6.108 " />
+	</svg>
+
+	Card
+</div>
